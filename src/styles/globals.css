@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,4 +26,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+
+.modal-close {
+  position: absolute;
+  top: -40em;
+  right: -50px;
+  padding: 10px;
+}
+
+.modal-content {
+  padding: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
