@@ -16,6 +16,13 @@ export default function Navbar() {
         <li className={router.pathname === '/contact' ? 'active' : ''}>
           <Link href="/contact" className="text-gray-800 hover:text-gray-600">Contact</Link>
         </li>
+        {/* Not yet created */}
+        <li className={router.pathname === '/shop' ? 'active' : ''}>
+          <Link href="/shop" className="text-gray-800 hover:text-gray-600">Shop</Link>
+        </li>
+        <li className={router.pathname === '/portfolio' ? 'active' : ''}>
+          <Link href="/portfolio" className="text-gray-800 hover:text-gray-600">Portfolio</Link>
+        </li>
       </ul>
     </nav>
   );
