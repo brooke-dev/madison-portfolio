@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const Modal = ({ onClose, title, description, additionalInfo, image }) => {
+const Modal = ({ onClose, title, description, additionalInfo, image, date }) => {
   return (
     <>
       <div className="modal-overlay fixed top-0 left-0 w-full h-full bg-black opacity-50" onClick={onClose}></div>
@@ -16,6 +16,7 @@ const Modal = ({ onClose, title, description, additionalInfo, image }) => {
             <h2 className="text-3xl font-bold mb-4">{title}</h2>
             <p className="mb-8">{description}</p>
             {additionalInfo && <p className="mb-8">{additionalInfo}</p>}
+            {date && <p className="text-center italic">{date}</p>}
           </div>
         </div>
       </div>
