@@ -1,47 +1,22 @@
-import React from "react";
-// import Header from "@/Components/Header";
-// import Footer from "@/Components/Footer";
-// import { useSession } from "next-auth/react";
-import Link from "next/link";
-export default function About() {
-//   const { data: session, status } = useSession();
+import React from 'react'
+
+function About() {
   return (
-    <>
-      {/* <Header /> */}
-      <section className="relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-            <div className="text-center pb-12 md:pb-16">
-              <h1
-                className="break-words text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
-                data-aos="zoom-y-out"
-              >
-                About{" "}Me
-              </h1>
-
-              <div className="max-w-3xl mx-auto flex flex-row space-x-8">
-                <p
-                  className="text-xl text-gray-600 mb-8"
-                  data-aos="zoom-y-out"
-                  data-aos-delay="150"
-                >
-                 Madison about me insert here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore repellendus ipsa, hic laudantium minus doloribus odit sit, nobis facere maiores facilis in earum. Magnam animi dolor fugit minima. Suscipit, nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur libero, eum non explicabo fuga illum, accusantium iure enim quibusdam ratione porro hic. Facilis ut neque id. Dignissimos iusto a ex!
-
-                </p>
-                <p
-                  className="text-xl text-gray-600 mb-8 "
-                  data-aos="zoom-y-out"
-                  data-aos-delay="150"
-                >
-                 Madison about ART insert here. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore repellendus ipsa, hic laudantium minus doloribus odit sit, nobis facere maiores facilis in earum. Magnam animi dolor fugit minima. Suscipit, nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur libero, eum non explicabo fuga illum, accusantium iure enim quibusdam ratione porro hic. Facilis ut neque id. Dignissimos iusto a ex!
-
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <Footer /> */}
-    </>
-  );
+    <div className="flex flex-col items-center">
+      <h1 className="text-3xl font-bold my-6">About Me</h1>
+      <div className="flex flex-row justify-center items-center my-6">
+        <img src="https://plus.unsplash.com/premium_photo-1669741908308-5ca216f3fcd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="Your Image" className="w-48 h-48 rounded-full object-cover mr-6" />
+        <p className="text-lg">Write something about yourself here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis ducimus molestiae rem deleniti culpa, odio voluptatibus quasi suscipit qui? Inventore molestias quas sit nobis? Velit modi molestias impedit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque illum officia error nihil voluptatum ut deserunt nobis ratione hic magni excepturi illo harum, sequi, saepe debitis! Quisquam, illum tempora.
+        Nemo quam, reprehenderit accusantium sapiente quidem commodi consequuntur praesentium vero voluptatum inventore perferendis a pariatur! Modi nulla illo voluptatibus expedita veritatis aperiam itaque labore quas obcaecati reiciendis? Rerum, alias qui.</p>
+      </div>
+      <h2 className="text-3xl font-bold my-6">About My Art</h2>
+      <div className="flex flex-row justify-center items-center my-6">
+        <img src="https://plus.unsplash.com/premium_photo-1669741908308-5ca216f3fcd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="Your Image" className="w-48 h-48 rounded-full object-cover mr-6" />
+        <p className="text-lg">Write something about yourself here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis ducimus molestiae rem deleniti culpa, odio voluptatibus quasi suscipit qui? Inventore molestias quas sit nobis? Velit modi molestias impedit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque illum officia error nihil voluptatum ut deserunt nobis ratione hic magni excepturi illo harum, sequi, saepe debitis! Quisquam, illum tempora.
+        Nemo quam, reprehenderit accusantium sapiente quidem commodi consequuntur praesentium vero voluptatum inventore perferendis a pariatur! Modi nulla illo voluptatibus expedita veritatis aperiam itaque labore quas obcaecati reiciendis? Rerum, alias qui.</p>
+      </div>
+    </div>
+  )
 }
+
+export default About
