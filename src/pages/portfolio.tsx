@@ -9,6 +9,8 @@ const portfolioData = [
     additionalInfo: 'Additional Info about ArtCard 1',
     date: "January 2020",
     yearMonth: "2020-01",
+    inStock: true,
+    quantity: 15,
   },
   {
     title: 'Example Art 2',
@@ -16,7 +18,9 @@ const portfolioData = [
     image:"https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80",
     additionalInfo: 'Additional Info about ArtCard 2',
     date: "July 2020",
-    yearMonth: "2020-07"
+    yearMonth: "2020-07",
+    inStock: true,
+    quantity: 8,
   },
   {
     title: 'Example Art 3',
@@ -24,7 +28,9 @@ const portfolioData = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80",
     additionalInfo: 'Additional Info about ArtCard 3',
     date: "April 2021",
-    yearMonth: "2021-04"
+    yearMonth: "2021-04",
+    inStock: true,
+    quantity: 1,
   },
   {
     title: 'Example Art 4',
@@ -32,7 +38,9 @@ const portfolioData = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80",
     additionalInfo: 'Additional Info about ArtCard 4',
     date: "August 2021",
-    yearMonth: "2021-08"
+    yearMonth: "2021-08",
+    inStock: false,
+    quantity: 0,
   },
   { 
     title: 'Example Art 5',
@@ -40,7 +48,9 @@ const portfolioData = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80",
     additionalInfo: 'Additional Info about ArtCard 5',
     date: "September 2021",
-    yearMonth: "2021-09"
+    yearMonth: "2021-09",
+    inStock: true,
+    quantity: 20,
   },
   { 
     title: 'Example Art 6',
@@ -48,7 +58,9 @@ const portfolioData = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80",
     additionalInfo: 'Additional Info about ArtCard 6',
     date: "October 2021",
-    yearMonth: "2021-10"
+    yearMonth: "2021-10",
+    inStock: false,
+    quantity: 0,
   },
   { 
     title: 'Example Art 7',
@@ -56,7 +68,9 @@ const portfolioData = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80",
     additionalInfo: 'Additional Info about ArtCard 7',
     date: "July 2022",
-    yearMonth: "2022-07"
+    yearMonth: "2022-07",
+    inStock: true,
+    quantity: 11,
   },
   { 
     title: 'Example Art 8',
@@ -65,6 +79,8 @@ const portfolioData = [
     additionalInfo: 'Additional Info about ArtCard 8',
     date: "March 2023",
     yearMonth: "2023-03",
+    inStock: false,
+    quantity: 0,
   },
 ]
 function Portfolio() {
@@ -109,6 +125,8 @@ function Portfolio() {
                     image={item.image}
                     additionalInfo={item.additionalInfo}
                     date={item.date}
+                    inStock={item.inStock}
+                    quantity={item.quantity}
                   />
                 ))}
             </div>

@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const Modal = ({ onClose, title, description, additionalInfo, image, date }) => {
+const Modal = ({ onClose, title, description, additionalInfo, image, date, inStock, quantity }) => {
   return (
     <>
       <div className="modal-overlay fixed top-0 left-0 w-full h-full bg-black opacity-50" onClick={onClose}></div>
@@ -11,12 +11,16 @@ const Modal = ({ onClose, title, description, additionalInfo, image, date }) => 
             <img src={image} alt={title} className="w-full h-full object-cover" />
           </div>
           <div className="info-container flex-grow w-full max-w-xl flex flex-col justify-center items-center lg:items-start relative">
-            <button  className="modal-close top-0 right-0 mt-4 mr-4 px-2 py-1 text-sm font-medium leading-none text-gray-700 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"onClick={onClose}>Close
+            <button className="modal-close top-0 right-0 mt-4 mr-4 px-2 py-1 text-sm font-medium leading-none text-gray-700 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500" onClick={onClose}>Close
             </button>
             <h2 className="text-3xl font-bold mb-4">{title}</h2>
             <p className="mb-8">{description}</p>
             {additionalInfo && <p className="mb-8">{additionalInfo}</p>}
             {date && <p className="text-center italic">{date}</p>}
+            <button className="py-2 px-4 text-white font-bold bg-blue-500 rounded-md mt-4" disabled={!inStock}>
+              {inStock ? 'Buy Now' : 'Sorry, Out of Stock'}
+            </button>
+            <p>Quantity: {quantity} </p>
           </div>
         </div>
       </div>
