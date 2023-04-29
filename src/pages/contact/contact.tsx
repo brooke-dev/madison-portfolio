@@ -13,34 +13,35 @@ const ContactForm = () => {
     const handleNameChange = (e: any) => {
         setName(e.value)
     }
-    const handleValidation = () => {
-        let tempErrors = {};
-        let isValid = true;
+    // const handleValidation = () => {
+
+    //     // let tempErrors = {};
+    //     // let isValid = true;
     
 
-        if (name.length <= 0) {
-            tempErrors["name"] = true;
-            isValid = false;
-        }
-        if (email.length <= 0) {
-            tempErrors["email"] = true;
-            isValid = false;
-        }
-        if (message.length <= 0) {
-            tempErrors["message"] = true;
-            isValid = false;
-        }
+    //     // if (name.length <= 0) {
+    //     //     tempErrors["name"] = true;
+    //     //     isValid = false;
+    //     // }
+    //     // if (email.length <= 0) {
+    //     //     tempErrors["email"] = true;
+    //     //     isValid = false;
+    //     // }
+    //     // if (message.length <= 0) {
+    //     //     tempErrors["message"] = true;
+    //     //     isValid = false;
+    //     // }
     
-        setErrors({ ...tempErrors });
-        console.log("errors", errors);
-        return isValid;
-    };
+    //     // setErrors({ ...tempErrors });
+    //     // console.log("errors", errors);
+    //     // return isValid;
+    // };
 
     // Send the email
     const handleSubmit = async (e: any) => {
         e.preventDefault();
     
-        let isValidForm = handleValidation();
+        // let isValidForm = handleValidation();
     
 
         
@@ -68,7 +69,7 @@ const ContactForm = () => {
 
     // Redirect to the success page
     router.push("/contact/success");
-    };
+    
 
     return (
 
