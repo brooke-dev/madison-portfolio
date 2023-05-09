@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.17",
+    "@sendgrid/mail": "^7.7.0",
     "@paypal/checkout-server-sdk": "^1.0.3",
     "@paypal/react-paypal-js": "^7.8.3",
     "@types/node": "18.15.11",
@@ -23,7 +26,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-youtube": "^10.1.0",
-    "tailwindcss": "^3.3.1",
+    "sendemail": "^4.0.3",
+    "sendgrid": "^5.2.3",
+    "tailwindcss": "^3.3.2",
     "ts-node": "^10.2.1",
     "typescript": "5.0.4"
   },
