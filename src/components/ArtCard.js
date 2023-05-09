@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 
-const ArtCard = ({ title, description, image, additionalInfo }) => {
+const ArtCard = ({ title, description, image, additionalInfo, date, inStock, quantity}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -18,7 +18,16 @@ const ArtCard = ({ title, description, image, additionalInfo }) => {
         <img  className="max-w-xs mx-auto" src={image} alt={title} />
       </div>
       {isModalOpen && (
-        <Modal onClose={handleModalClose} title={title} description={description} image={image} additionalInfo={additionalInfo}/>
+        <Modal 
+          onClose={handleModalClose} 
+          title={title} 
+          description={description} 
+          image={image} 
+          additionalInfo={additionalInfo} 
+          date={date}
+          inStock={inStock}
+          quantity={quantity}
+          />
       )}
     </div>
   );
